@@ -9,15 +9,18 @@ void output(State& ans) {
 }
 
 State init() {
-    // ここで初期ステートを生成する
+    State s;
+    s.score = 0;
+    s.isFinish = false;
+    return s;
 }
 
-// ここにいろいろなコードを挟む Greedyなど
+// ここにいろいろな処理を入れる。
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    Timer timer;  // ここでタイマーを初期化
+    timer.init();
 
     input();
 

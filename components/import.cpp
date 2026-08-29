@@ -26,7 +26,9 @@ constexpr ll dy[4] = {0, 1, 0, -1};
 struct Timer {
     chrono::steady_clock::time_point start;
 
-    Timer() { start = chrono::steady_clock::now(); }
+    Timer() { this->init(); }
+
+    void init() { start = chrono::steady_clock::now(); }
 
     ll time() {
         auto current = chrono::steady_clock::now();
@@ -34,3 +36,4 @@ struct Timer {
             .count();
     }
 };
+Timer timer;
