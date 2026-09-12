@@ -146,7 +146,7 @@ int main() {
     State begin = init();
 
     // ここでGreedyやらなんやらする
-    State ans = greedy(begin);
+    State ans = beam_search(begin);
 
     output(ans);
 
