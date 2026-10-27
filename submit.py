@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+# AHC Library made by anchu1024
+# URL: https://github.com/anchu1024/ahc-library
 """AHC提出用の単一ファイル探索テンプレート。"""
 
 from __future__ import annotations
